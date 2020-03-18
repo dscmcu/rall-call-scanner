@@ -42,7 +42,7 @@ while True:
 			d_data = json.loads(barcodeData)
 			now = datetime.datetime.now()
 			now = now.strftime("%b %d %Y %H:%M:%S")
-			msg="{},{},{},{}\n".format(now,d_data['name'],d_data['grade'],d_data['gender'])
+			msg="{},{},{},{},{}\n".format(now,d_data['name'],d_data['grade'],d_data['gender'],d_data['privacy'])
 		
 			print(msg)
 			csv.write(msg)
